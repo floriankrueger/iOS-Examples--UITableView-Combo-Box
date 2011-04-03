@@ -65,7 +65,7 @@
 		CF0892711349192200DD77CE /* DropDownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownCell.h; sourceTree = "<group>"; };
 		CF0892721349192200DD77CE /* DropDownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownCell.m; sourceTree = "<group>"; };
 		CF0892741349194100DD77CE /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
-		CF0892761349305200DD77CE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		CF0892761349305200DD77CE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README; path = DropDownTest/README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +95,7 @@
 		CF089221134911D100DD77CE = {
 			isa = PBXGroup;
 			children = (
+				CF0892761349305200DD77CE /* README */,
 				CF089236134911D100DD77CE /* DropDownTest */,
 				CF089256134911D100DD77CE /* DropDownTestTests */,
 				CF08922F134911D100DD77CE /* Frameworks */,
@@ -135,7 +136,6 @@
 				CF0892741349194100DD77CE /* DropDownCell.xib */,
 				CF089237134911D100DD77CE /* Supporting Files */,
 				CF08926D1349184900DD77CE /* Images */,
-				CF0892761349305200DD77CE /* README */,
 			);
 			path = DropDownTest;
 			sourceTree = "<group>";
