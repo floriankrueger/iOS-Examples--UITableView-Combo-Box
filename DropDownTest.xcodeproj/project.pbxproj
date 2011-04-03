@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF089231134911D100DD77CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF089230134911D100DD77CE /* UIKit.framework */; };
+		CF089233134911D100DD77CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF089232134911D100DD77CE /* Foundation.framework */; };
+		CF089235134911D100DD77CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF089234134911D100DD77CE /* CoreGraphics.framework */; };
+		CF08923B134911D100DD77CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF089239134911D100DD77CE /* InfoPlist.strings */; };
+		CF08923E134911D100DD77CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF08923D134911D100DD77CE /* main.m */; };
+		CF089241134911D100DD77CE /* DropDownTestAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF089240134911D100DD77CE /* DropDownTestAppDelegate.m */; };
+		CF089244134911D100DD77CE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF089242134911D100DD77CE /* MainWindow.xib */; };
+		CF089247134911D100DD77CE /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF089246134911D100DD77CE /* RootViewController.m */; };
+		CF08924A134911D100DD77CE /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF089248134911D100DD77CE /* RootViewController.xib */; };
+		CF089251134911D100DD77CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF089230134911D100DD77CE /* UIKit.framework */; };
+		CF089252134911D100DD77CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF089232134911D100DD77CE /* Foundation.framework */; };
+		CF089253134911D100DD77CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF089234134911D100DD77CE /* CoreGraphics.framework */; };
+		CF08925B134911D100DD77CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF089259134911D100DD77CE /* InfoPlist.strings */; };
+		CF08925E134911D100DD77CE /* DropDownTestTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CF08925D134911D100DD77CE /* DropDownTestTests.h */; };
+		CF089260134911D100DD77CE /* DropDownTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF08925F134911D100DD77CE /* DropDownTestTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF089254134911D100DD77CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF089223134911D100DD77CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF08922B134911D100DD77CE;
+			remoteInfo = DropDownTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF08922C134911D100DD77CE /* DropDownTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DropDownTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF089230134911D100DD77CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF089232134911D100DD77CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF089234134911D100DD77CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF089238134911D100DD77CE /* DropDownTest-Info.plist */ = {isa = PBXFileReference; path = "DropDownTest-Info.plist"; sourceTree = "<group>"; };
+		CF08923A134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF08923C134911D100DD77CE /* DropDownTest-Prefix.pch */ = {isa = PBXFileReference; path = "DropDownTest-Prefix.pch"; sourceTree = "<group>"; };
+		CF08923D134911D100DD77CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF08923F134911D100DD77CE /* DropDownTestAppDelegate.h */ = {isa = PBXFileReference; path = DropDownTestAppDelegate.h; sourceTree = "<group>"; };
+		CF089240134911D100DD77CE /* DropDownTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownTestAppDelegate.m; sourceTree = "<group>"; };
+		CF089243134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		CF089245134911D100DD77CE /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		CF089246134911D100DD77CE /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		CF089249134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
+		CF089250134911D100DD77CE /* DropDownTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropDownTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF089258134911D100DD77CE /* DropDownTestTests-Info.plist */ = {isa = PBXFileReference; path = "DropDownTestTests-Info.plist"; sourceTree = "<group>"; };
+		CF08925A134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF08925C134911D100DD77CE /* DropDownTestTests-Prefix.pch */ = {isa = PBXFileReference; path = "DropDownTestTests-Prefix.pch"; sourceTree = "<group>"; };
+		CF08925D134911D100DD77CE /* DropDownTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownTestTests.h; sourceTree = "<group>"; };
+		CF08925F134911D100DD77CE /* DropDownTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownTestTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF089229134911D100DD77CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF089231134911D100DD77CE /* UIKit.framework in Frameworks */,
+				CF089233134911D100DD77CE /* Foundation.framework in Frameworks */,
+				CF089235134911D100DD77CE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF08924C134911D100DD77CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF089251134911D100DD77CE /* UIKit.framework in Frameworks */,
+				CF089252134911D100DD77CE /* Foundation.framework in Frameworks */,
+				CF089253134911D100DD77CE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF089221134911D100DD77CE = {
+			isa = PBXGroup;
+			children = (
+				CF089236134911D100DD77CE /* DropDownTest */,
+				CF089256134911D100DD77CE /* DropDownTestTests */,
+				CF08922F134911D100DD77CE /* Frameworks */,
+				CF08922D134911D100DD77CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF08922D134911D100DD77CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF08922C134911D100DD77CE /* DropDownTest.app */,
+				CF089250134911D100DD77CE /* DropDownTestTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF08922F134911D100DD77CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF089230134911D100DD77CE /* UIKit.framework */,
+				CF089232134911D100DD77CE /* Foundation.framework */,
+				CF089234134911D100DD77CE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF089236134911D100DD77CE /* DropDownTest */ = {
+			isa = PBXGroup;
+			children = (
+				CF08923F134911D100DD77CE /* DropDownTestAppDelegate.h */,
+				CF089240134911D100DD77CE /* DropDownTestAppDelegate.m */,
+				CF089242134911D100DD77CE /* MainWindow.xib */,
+				CF089245134911D100DD77CE /* RootViewController.h */,
+				CF089246134911D100DD77CE /* RootViewController.m */,
+				CF089248134911D100DD77CE /* RootViewController.xib */,
+				CF089237134911D100DD77CE /* Supporting Files */,
+			);
+			path = DropDownTest;
+			sourceTree = "<group>";
+		};
+		CF089237134911D100DD77CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF089238134911D100DD77CE /* DropDownTest-Info.plist */,
+				CF089239134911D100DD77CE /* InfoPlist.strings */,
+				CF08923C134911D100DD77CE /* DropDownTest-Prefix.pch */,
+				CF08923D134911D100DD77CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF089256134911D100DD77CE /* DropDownTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF08925D134911D100DD77CE /* DropDownTestTests.h */,
+				CF08925F134911D100DD77CE /* DropDownTestTests.m */,
+				CF089257134911D100DD77CE /* Supporting Files */,
+			);
+			path = DropDownTestTests;
+			sourceTree = "<group>";
+		};
+		CF089257134911D100DD77CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF089258134911D100DD77CE /* DropDownTestTests-Info.plist */,
+				CF089259134911D100DD77CE /* InfoPlist.strings */,
+				CF08925C134911D100DD77CE /* DropDownTestTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF08922B134911D100DD77CE /* DropDownTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF089263134911D100DD77CE /* Build configuration list for PBXNativeTarget "DropDownTest" */;
+			buildPhases = (
+				CF089228134911D100DD77CE /* Sources */,
+				CF089229134911D100DD77CE /* Frameworks */,
+				CF08922A134911D100DD77CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DropDownTest;
+			productName = DropDownTest;
+			productReference = CF08922C134911D100DD77CE /* DropDownTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF08924F134911D100DD77CE /* DropDownTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF089266134911D200DD77CE /* Build configuration list for PBXNativeTarget "DropDownTestTests" */;
+			buildPhases = (
+				CF08924B134911D100DD77CE /* Sources */,
+				CF08924C134911D100DD77CE /* Frameworks */,
+				CF08924D134911D100DD77CE /* Resources */,
+				CF08924E134911D100DD77CE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF089255134911D100DD77CE /* PBXTargetDependency */,
+			);
+			name = DropDownTestTests;
+			productName = DropDownTestTests;
+			productReference = CF089250134911D100DD77CE /* DropDownTestTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF089223134911D100DD77CE /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = CF089226134911D100DD77CE /* Build configuration list for PBXProject "DropDownTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF089221134911D100DD77CE;
+			productRefGroup = CF08922D134911D100DD77CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF08922B134911D100DD77CE /* DropDownTest */,
+				CF08924F134911D100DD77CE /* DropDownTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF08922A134911D100DD77CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF08923B134911D100DD77CE /* InfoPlist.strings in Resources */,
+				CF089244134911D100DD77CE /* MainWindow.xib in Resources */,
+				CF08924A134911D100DD77CE /* RootViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF08924D134911D100DD77CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF08925B134911D100DD77CE /* InfoPlist.strings in Resources */,
+				CF08925E134911D100DD77CE /* DropDownTestTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF08924E134911D100DD77CE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF089228134911D100DD77CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF08923E134911D100DD77CE /* main.m in Sources */,
+				CF089241134911D100DD77CE /* DropDownTestAppDelegate.m in Sources */,
+				CF089247134911D100DD77CE /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF08924B134911D100DD77CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF089260134911D100DD77CE /* DropDownTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF089255134911D100DD77CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF08922B134911D100DD77CE /* DropDownTest */;
+			targetProxy = CF089254134911D100DD77CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF089239134911D100DD77CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF08923A134911D100DD77CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF089242134911D100DD77CE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF089243134911D100DD77CE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		CF089248134911D100DD77CE /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF089249134911D100DD77CE /* en */,
+			);
+			name = RootViewController.xib;
+			sourceTree = "<group>";
+		};
+		CF089259134911D100DD77CE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF08925A134911D100DD77CE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF089261134911D100DD77CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF089262134911D100DD77CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		CF089264134911D100DD77CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropDownTest/DropDownTest-Prefix.pch";
+				INFOPLIST_FILE = "DropDownTest/DropDownTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF089265134911D100DD77CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropDownTest/DropDownTest-Prefix.pch";
+				INFOPLIST_FILE = "DropDownTest/DropDownTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF089267134911D200DD77CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropDownTest.app/DropDownTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropDownTestTests/DropDownTestTests-Prefix.pch";
+				INFOPLIST_FILE = "DropDownTestTests/DropDownTestTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CF089268134911D200DD77CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DropDownTest.app/DropDownTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DropDownTestTests/DropDownTestTests-Prefix.pch";
+				INFOPLIST_FILE = "DropDownTestTests/DropDownTestTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF089226134911D100DD77CE /* Build configuration list for PBXProject "DropDownTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF089261134911D100DD77CE /* Debug */,
+				CF089262134911D100DD77CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF089263134911D100DD77CE /* Build configuration list for PBXNativeTarget "DropDownTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF089264134911D100DD77CE /* Debug */,
+				CF089265134911D100DD77CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF089266134911D200DD77CE /* Build configuration list for PBXNativeTarget "DropDownTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF089267134911D200DD77CE /* Debug */,
+				CF089268134911D200DD77CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF089223134911D100DD77CE /* Project object */;
+}
