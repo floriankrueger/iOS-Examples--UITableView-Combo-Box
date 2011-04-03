@@ -7,6 +7,7 @@
 //
 
 #import "RootViewController.h"
+#import "DropDownCell.h"
 
 @implementation RootViewController
 
@@ -46,26 +47,162 @@
 // Customize the number of sections in the table view.
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 0;
+    switch (section) {
+        case 0: 
+            if (dropDown1Open) {
+                return 4;
+            }
+            else
+            {
+                return 1;
+            }
+            break;
+        
+        case 1:
+            if (dropDown2Open) {
+                return 4;
+            }
+            else
+            {
+                return 1;
+            }
+        default:
+            return 1;
+            break;
+    }
 }
 
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
+    static NSString *DropDownCellIdentifier = @"DropDownCell";
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    }
+    switch ([indexPath section]) {
+        case 0: {
+    
+            switch ([indexPath row]) {
+                case 0: {
+                 
+                    DropDownCell *cell = (DropDownCell*) [tableView dequeueReusableCellWithIdentifier:DropDownCellIdentifier];
+                    
+                    if (cell == nil){
+                        NSLog(@"New Cell Made");
+                        
+                        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"DropDownCell" owner:nil options:nil];
+                        
+                        for(id currentObject in topLevelObjects)
+                        {
+                            if([currentObject isKindOfClass:[DropDownCell class]])
+                            {
+                                cell = (DropDownCell *)currentObject;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    [[cell textLabel] setText:@"Option 1"];
+                    dropDown1 = @"Option 1";
+                    
+                    // Configure the cell.
+                    return cell;
+                    
+                    break;
+                }
+                default: {
+                    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+                    
+                    if (cell == nil) {
+                        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+                    }
+                    
+                    NSString *label = [NSString stringWithFormat:@"Option %i", [indexPath row]];
+                    
+                    [[cell textLabel] setText:label];
+                    
+                    // Configure the cell.
+                    return cell;
+                    
+                    break;
+                }
+            }
 
-    // Configure the cell.
-    return cell;
+            break;
+        }
+        case 1: {
+
+            switch ([indexPath row]) {
+                case 0: {
+                    DropDownCell *cell = (DropDownCell*) [tableView dequeueReusableCellWithIdentifier:DropDownCellIdentifier];
+                    
+                    if (cell == nil){
+                        NSLog(@"New Cell Made");
+                        
+                        NSArray *topLevelObjects = [[NSBundle mainBundle] loadNibNamed:@"DropDownCell" owner:nil options:nil];
+                        
+                        for(id currentObject in topLevelObjects)
+                        {
+                            if([currentObject isKindOfClass:[DropDownCell class]])
+                            {
+                                cell = (DropDownCell *)currentObject;
+                                break;
+                            }
+                        }
+                    }
+                    
+                    [[cell textLabel] setText:@"Option 1"];
+                    dropDown2 = @"Option 1";
+                    
+                    // Configure the cell.
+                    return cell;
+                    
+                    break;
+                }
+                default: {
+                    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+                    
+                    if (cell == nil) {
+                        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+                    }
+                    
+                    NSString *label = [NSString stringWithFormat:@"Option %i", [indexPath row]];
+                    
+                    [[cell textLabel] setText:label];
+                    
+                    // Configure the cell.
+                    return cell;
+                    
+                    break;
+                }
+            }
+            
+            break;
+        }
+        case 2: {
+
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+            
+            if (cell == nil) {
+                cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+            }
+
+            [[cell textLabel] setText:@"Save"];
+            
+            // Configure the cell.
+            return cell;
+            
+            break;
+        }
+        default:
+            
+            return nil;
+            break;
+    }
 }
 
 /*
@@ -118,6 +255,117 @@
     [self.navigationController pushViewController:detailViewController animated:YES];
     [detailViewController release];
 	*/
+    
+    switch ([indexPath section]) {
+        case 0: {
+            
+            switch ([indexPath row]) {
+                case 0:
+                {
+                    DropDownCell *cell = (DropDownCell*) [tableView cellForRowAtIndexPath:indexPath];
+                    
+                    NSIndexPath *path0 = [NSIndexPath indexPathForRow:[indexPath row]+1 inSection:[indexPath section]];
+                    NSIndexPath *path1 = [NSIndexPath indexPathForRow:[indexPath row]+2 inSection:[indexPath section]];
+                    NSIndexPath *path2 = [NSIndexPath indexPathForRow:[indexPath row]+3 inSection:[indexPath section]];
+                    
+                    NSArray *indexPathArray = [NSArray arrayWithObjects:path0, path1, path2, nil];
+                    
+                    if ([cell isOpen])
+                    {
+                        [cell setClosed];
+                        dropDown1Open = [cell isOpen];
+                        
+                        [tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationTop];
+                    }
+                    else
+                    {
+                        [cell setOpen];
+                        dropDown1Open = [cell isOpen];
+                        
+                        [tableView insertRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationTop];
+                    }
+                    
+                    break;
+                }   
+                default:
+                {
+                    dropDown1 = [[[tableView cellForRowAtIndexPath:indexPath] textLabel] text];
+                    
+                    NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:[indexPath section]];
+                    DropDownCell *cell = (DropDownCell*) [tableView cellForRowAtIndexPath:path];
+                    
+                    [[cell textLabel] setText:dropDown1];
+                    
+                    break;
+                }
+            }
+            
+            break;
+        }
+        case 1: {
+            
+            switch ([indexPath row]) {
+                case 0:
+                {
+                    DropDownCell *cell = (DropDownCell*) [tableView cellForRowAtIndexPath:indexPath];
+                    
+                    NSIndexPath *path0 = [NSIndexPath indexPathForRow:[indexPath row]+1 inSection:[indexPath section]];
+                    NSIndexPath *path1 = [NSIndexPath indexPathForRow:[indexPath row]+2 inSection:[indexPath section]];
+                    NSIndexPath *path2 = [NSIndexPath indexPathForRow:[indexPath row]+3 inSection:[indexPath section]];
+                    
+                    NSArray *indexPathArray = [NSArray arrayWithObjects:path0, path1, path2, nil];
+                    
+                    if ([cell isOpen])
+                    {
+                        [cell setClosed];
+                        dropDown2Open = [cell isOpen];
+                        
+                        [tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationTop];
+                    }
+                    else
+                    {
+                        [cell setOpen];
+                        dropDown2Open = [cell isOpen];
+                        
+                        [tableView insertRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationTop];
+                    }
+                    
+                    break;
+                }   
+                default:
+                {
+                    dropDown2 = [[[tableView cellForRowAtIndexPath:indexPath] textLabel] text];
+                    
+                    NSIndexPath *path = [NSIndexPath indexPathForRow:0 inSection:[indexPath section]];
+                    DropDownCell *cell = (DropDownCell*) [tableView cellForRowAtIndexPath:path];
+                    
+                    [[cell textLabel] setText:dropDown2];
+                    
+                    break;
+                }
+            }
+            
+            break;
+        }
+        case 2: {
+            
+            NSString *msg = [NSString stringWithFormat:@"First Option: %@ \nSecond Option: %@", dropDown1, dropDown2];
+            
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hi there!"
+                                                            message:msg
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"OK"
+                                                  otherButtonTitles:nil];
+            [alert autorelease];
+            [alert show];
+            
+            break;
+        }
+        default:
+            break;
+    }
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (void)didReceiveMemoryWarning

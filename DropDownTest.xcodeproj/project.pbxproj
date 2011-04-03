@@ -22,6 +22,11 @@
 		CF08925B134911D100DD77CE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF089259134911D100DD77CE /* InfoPlist.strings */; };
 		CF08925E134911D100DD77CE /* DropDownTestTests.h in Resources */ = {isa = PBXBuildFile; fileRef = CF08925D134911D100DD77CE /* DropDownTestTests.h */; };
 		CF089260134911D100DD77CE /* DropDownTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF08925F134911D100DD77CE /* DropDownTestTests.m */; };
+		CF08926B1349184100DD77CE /* arrow_down.png in Resources */ = {isa = PBXBuildFile; fileRef = CF0892691349184100DD77CE /* arrow_down.png */; };
+		CF08926C1349184100DD77CE /* arrow_up.png in Resources */ = {isa = PBXBuildFile; fileRef = CF08926A1349184100DD77CE /* arrow_up.png */; };
+		CF0892731349192200DD77CE /* DropDownCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0892721349192200DD77CE /* DropDownCell.m */; };
+		CF0892751349194200DD77CE /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF0892741349194100DD77CE /* DropDownCell.xib */; };
+		CF0892771349305200DD77CE /* README in Resources */ = {isa = PBXBuildFile; fileRef = CF0892761349305200DD77CE /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,22 +44,28 @@
 		CF089230134911D100DD77CE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF089232134911D100DD77CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CF089234134911D100DD77CE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		CF089238134911D100DD77CE /* DropDownTest-Info.plist */ = {isa = PBXFileReference; path = "DropDownTest-Info.plist"; sourceTree = "<group>"; };
+		CF089238134911D100DD77CE /* DropDownTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropDownTest-Info.plist"; sourceTree = "<group>"; };
 		CF08923A134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CF08923C134911D100DD77CE /* DropDownTest-Prefix.pch */ = {isa = PBXFileReference; path = "DropDownTest-Prefix.pch"; sourceTree = "<group>"; };
+		CF08923C134911D100DD77CE /* DropDownTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DropDownTest-Prefix.pch"; sourceTree = "<group>"; };
 		CF08923D134911D100DD77CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CF08923F134911D100DD77CE /* DropDownTestAppDelegate.h */ = {isa = PBXFileReference; path = DropDownTestAppDelegate.h; sourceTree = "<group>"; };
+		CF08923F134911D100DD77CE /* DropDownTestAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownTestAppDelegate.h; sourceTree = "<group>"; };
 		CF089240134911D100DD77CE /* DropDownTestAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownTestAppDelegate.m; sourceTree = "<group>"; };
 		CF089243134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		CF089245134911D100DD77CE /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		CF089245134911D100DD77CE /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		CF089246134911D100DD77CE /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		CF089249134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/RootViewController.xib; sourceTree = "<group>"; };
 		CF089250134911D100DD77CE /* DropDownTestTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropDownTestTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CF089258134911D100DD77CE /* DropDownTestTests-Info.plist */ = {isa = PBXFileReference; path = "DropDownTestTests-Info.plist"; sourceTree = "<group>"; };
+		CF089258134911D100DD77CE /* DropDownTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropDownTestTests-Info.plist"; sourceTree = "<group>"; };
 		CF08925A134911D100DD77CE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CF08925C134911D100DD77CE /* DropDownTestTests-Prefix.pch */ = {isa = PBXFileReference; path = "DropDownTestTests-Prefix.pch"; sourceTree = "<group>"; };
+		CF08925C134911D100DD77CE /* DropDownTestTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DropDownTestTests-Prefix.pch"; sourceTree = "<group>"; };
 		CF08925D134911D100DD77CE /* DropDownTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropDownTestTests.h; sourceTree = "<group>"; };
 		CF08925F134911D100DD77CE /* DropDownTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropDownTestTests.m; sourceTree = "<group>"; };
+		CF0892691349184100DD77CE /* arrow_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down.png; sourceTree = "<group>"; };
+		CF08926A1349184100DD77CE /* arrow_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_up.png; sourceTree = "<group>"; };
+		CF0892711349192200DD77CE /* DropDownCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropDownCell.h; sourceTree = "<group>"; };
+		CF0892721349192200DD77CE /* DropDownCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropDownCell.m; sourceTree = "<group>"; };
+		CF0892741349194100DD77CE /* DropDownCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownCell.xib; sourceTree = "<group>"; };
+		CF0892761349305200DD77CE /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +130,12 @@
 				CF089245134911D100DD77CE /* RootViewController.h */,
 				CF089246134911D100DD77CE /* RootViewController.m */,
 				CF089248134911D100DD77CE /* RootViewController.xib */,
+				CF0892711349192200DD77CE /* DropDownCell.h */,
+				CF0892721349192200DD77CE /* DropDownCell.m */,
+				CF0892741349194100DD77CE /* DropDownCell.xib */,
 				CF089237134911D100DD77CE /* Supporting Files */,
+				CF08926D1349184900DD77CE /* Images */,
+				CF0892761349305200DD77CE /* README */,
 			);
 			path = DropDownTest;
 			sourceTree = "<group>";
@@ -153,6 +169,15 @@
 				CF08925C134911D100DD77CE /* DropDownTestTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF08926D1349184900DD77CE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				CF0892691349184100DD77CE /* arrow_down.png */,
+				CF08926A1349184100DD77CE /* arrow_up.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +250,10 @@
 				CF08923B134911D100DD77CE /* InfoPlist.strings in Resources */,
 				CF089244134911D100DD77CE /* MainWindow.xib in Resources */,
 				CF08924A134911D100DD77CE /* RootViewController.xib in Resources */,
+				CF08926B1349184100DD77CE /* arrow_down.png in Resources */,
+				CF08926C1349184100DD77CE /* arrow_up.png in Resources */,
+				CF0892751349194200DD77CE /* DropDownCell.xib in Resources */,
+				CF0892771349305200DD77CE /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +292,7 @@
 				CF08923E134911D100DD77CE /* main.m in Sources */,
 				CF089241134911D100DD77CE /* DropDownTestAppDelegate.m in Sources */,
 				CF089247134911D100DD77CE /* RootViewController.m in Sources */,
+				CF0892731349192200DD77CE /* DropDownCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +392,7 @@
 				GCC_PREFIX_HEADER = "DropDownTest/DropDownTest-Prefix.pch";
 				INFOPLIST_FILE = "DropDownTest/DropDownTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -375,6 +406,7 @@
 				GCC_PREFIX_HEADER = "DropDownTest/DropDownTest-Prefix.pch";
 				INFOPLIST_FILE = "DropDownTest/DropDownTest-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

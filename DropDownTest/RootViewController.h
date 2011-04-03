@@ -10,6 +10,12 @@
 
 @interface RootViewController : UITableViewController {
 
+    NSString *dropDown1;
+    NSString *dropDown2;
+    
+    BOOL dropDown1Open;
+    BOOL dropDown2Open;
+    
 }
 
 
