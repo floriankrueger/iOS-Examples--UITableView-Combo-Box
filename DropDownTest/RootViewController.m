@@ -341,6 +341,19 @@
                     
                     [[cell textLabel] setText:dropDown2];
                     
+                    // close the dropdown cell
+                    
+                    NSIndexPath *path0 = [NSIndexPath indexPathForRow:[path row]+1 inSection:[indexPath section]];
+                    NSIndexPath *path1 = [NSIndexPath indexPathForRow:[path row]+2 inSection:[indexPath section]];
+                    NSIndexPath *path2 = [NSIndexPath indexPathForRow:[path row]+3 inSection:[indexPath section]];
+                    
+                    NSArray *indexPathArray = [NSArray arrayWithObjects:path0, path1, path2, nil];
+                    
+                    [cell setClosed];
+                    dropDown2Open = [cell isOpen];
+                    
+                    [tableView deleteRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationTop];
+                    
                     break;
                 }
             }
