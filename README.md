@@ -1,9 +1,12 @@
-DropDown Test - Creating Combo Boxes from UITableViewCells
+DropDown Test - Creating Combo Boxes from UITableViewCells [![endorse](http://api.coderwall.com/floriankrueger/endorsecount.png)](http://coderwall.com/floriankrueger)
 ==========================================================
 
 Author: Florian Krüger [florian.krueger@projectserver.org](mailto:florian.krueger@projectserver.org)
+
 Website: [xcuze.me](http://www.xcuze.me)
+
 Date: 03. Apr 2011
+
 GIT Repository URL: [https://github.com/floriankrueger/iOS-Examples--UITableView-Combo-Box](https://github.com/floriankrueger/iOS-Examples--UITableView-Combo-Box)
 
 Purpose of this XCode project
