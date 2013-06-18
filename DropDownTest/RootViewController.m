@@ -9,7 +9,55 @@
 #import "RootViewController.h"
 #import "DropDownCell.h"
 
+@interface RootViewController ()
+
+- (void)internalSetup;
+
+@end
+
 @implementation RootViewController
+
+- (id)init
+{
+    if (self = [super init]) {
+        [self internalSetup];
+    }
+    
+    return self;
+}
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    if (self = [super initWithStyle:style]) {
+        [self internalSetup];
+    }
+    
+    return self;
+}
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        [self internalSetup];
+    }
+    
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [super initWithCoder:aDecoder]) {
+        [self internalSetup];
+    }
+    
+    return self;
+}
+
+- (void)internalSetup
+{
+    dropDown1 = @"Option 1";
+    dropDown2 = @"Option 1";
+}
 
 - (void)viewDidLoad
 {
@@ -104,10 +152,13 @@
                                 break;
                             }
                         }
+                        
+                        if (dropDown1Open) {
+                            [cell setOpen];
+                        }
+                        
+                        [[cell textLabel] setText:dropDown1];
                     }
-                    
-                    [[cell textLabel] setText:@"Option 1"];
-                    dropDown1 = @"Option 1";
                     
                     // Configure the cell.
                     return cell;
@@ -153,10 +204,13 @@
                                 break;
                             }
                         }
+                        
+                        if (dropDown2Open) {
+                            [cell setOpen];
+                        }
+                        
+                        [[cell textLabel] setText:dropDown2];
                     }
-                    
-                    [[cell textLabel] setText:@"Option 1"];
-                    dropDown2 = @"Option 1";
                     
                     // Configure the cell.
                     return cell;
